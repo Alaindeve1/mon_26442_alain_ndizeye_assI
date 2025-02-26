@@ -3,7 +3,6 @@
 <div align="center">
   
  
-  
   [![SQL](https://img.shields.io/badge/Oracle-21c-F80000?style=for-the-badge&logo=oracle&logoColor=white)](https://www.oracle.com/database/)
   [![PL/SQL](https://img.shields.io/badge/PL%2FSQL-Procedures-red?style=for-the-badge)](https://www.oracle.com/database/technologies/appdev/plsql.html)
   [![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)](https://github.com/)
@@ -32,6 +31,7 @@
 ## 🎯 Problem Statement
 
 
+
 Modern enterprises struggle with disparate data systems and siloed information across departments. This fragmentation leads to inefficiencies, redundancies, and challenges in decision-making processes.
 
 The **Company Database Management System** addresses these challenges by providing a unified platform that seamlessly integrates:
@@ -55,11 +55,11 @@ This integration enables real-time insights, promotes data-driven decision makin
     B -->|1:N| C[Transaction_Record]
     B -->|1:N| D[Salary_History]
     
-    style A fill:#f9f,stroke:#333,stroke-width:2px
-    style B fill:#bbf,stroke:#333,stroke-width:2px
-    style C fill:#bfb,stroke:#333,stroke-width:2px
-    style D fill:#fbf,stroke:#333,stroke-width:2px
-    style E fill:#fbb,stroke:#333,stroke-width:2px
+    style A fill:#d8a0d8,stroke:#333,stroke-width:2px,color:#000
+    style B fill:#a0a0e8,stroke:#333,stroke-width:2px,color:#000
+    style C fill:#a0d8a0,stroke:#333,stroke-width:2px,color:#000
+    style D fill:#d8a0d8,stroke:#333,stroke-width:2px,color:#000
+    style E fill:#e8c0a0,stroke:#333,stroke-width:2px,color:#000
   ```
   
 </div>
@@ -152,6 +152,6 @@ Complete technical documentation includes:
 ---
 
 <div align="center">
-  <p><i>Developed with  for Database Management Systems Course</i></p>
+  <p><i>Developed with for Database Management Systems Course</i></p>
   <p>© 2025 Ndizeye Alain | All Rights Reserved</p>
 </div>
