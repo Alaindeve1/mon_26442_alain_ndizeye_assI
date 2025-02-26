@@ -1,0 +1,301 @@
+CON_NAME 
+------------------------------
+CDB$ROOT
+
+    CON_ID CON_NAME                       OPEN MODE  RESTRICTED
+---------- ------------------------------ ---------- ----------
+         2 PDB$SEED                       READ ONLY  NO        
+         3 ORCLPDB                        MOUNTED              
+         4 MONA_26442_PDB_ASSI            READ WRITE NO        
+
+
+NAME                                                                                                                             OPEN_MODE 
+-------------------------------------------------------------------------------------------------------------------------------- ----------
+PDB$SEED                                                                                                                         READ ONLY 
+ORCLPDB                                                                                                                          MOUNTED   
+MONA_26442_PDB_ASSI                                                                                                              READ WRITE
+
+
+Session altered.
+
+CON_NAME 
+------------------------------
+MONA_26442_PDB_ASSI
+
+Pluggable database MONA_26442_PDB_ASSI altered.
+
+
+Table DEPARTMENT created.
+
+
+Table EMPLOYEE created.
+
+
+Table TRANSACTION_RECORD created.
+
+
+Table PROJECT created.
+
+
+Table SALARY_HISTORY created.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row updated.
+
+
+1 row deleted.
+
+
+Savepoint created.
+
+
+EMPLOYEE_ID FIRST_NAME                                         LAST_NAME                                          DEPARTMENT                                                                                          
+----------- -------------------------------------------------- -------------------------------------------------- ----------------------------------------------------------------------------------------------------
+        101 Ndizeye                                            Alain                                              IT                                                                                                  
+        102 Mucyo                                              Smith                                              HR                                                                                                  
+        103 Nganji                                             Brown                                              IT                                                                                                  
+        104 David                                              Williams                                           Finance                                                                                             
+        105 Sarah                                              Johnson                                            Marketing                                                                                           
+
+
+TRANSACTION_ID FIRST_NAME                                         LAST_NAME                                              AMOUNT TRANSACTI
+-------------- -------------------------------------------------- -------------------------------------------------- ---------- ---------
+          1001 Ndizeye                                            Alain                                                    5000 24-FEB-25
+          1002 Ndizeye                                            Alain                                                    7000 19-FEB-25
+          1003 Mucyo                                              Smith                                                    3000 21-FEB-25
+          1005 David                                              Williams                                                 4500 23-FEB-25
+          1006 Sarah                                              Johnson                                                  6200 25-FEB-25
+
+
+TRANSACTION_ID FIRST_NAME                                         LAST_NAME                                              AMOUNT TRANSACTI   DAYS_AGO
+-------------- -------------------------------------------------- -------------------------------------------------- ---------- --------- ----------
+          1006 Sarah                                              Johnson                                                  6200 25-FEB-25          1
+          1001 Ndizeye                                            Alain                                                    5000 24-FEB-25          2
+          1005 David                                              Williams                                                 4500 23-FEB-25          3
+          1003 Mucyo                                              Smith                                                    3000 21-FEB-25          5
+          1002 Ndizeye                                            Alain                                                    7000 19-FEB-25          7
+
+
+TRANSACTION_ID FIRST_NAME                                         LAST_NAME                                              AMOUNT TRANSACTI AMOUNT_RANK
+-------------- -------------------------------------------------- -------------------------------------------------- ---------- --------- -----------
+          1002 Ndizeye                                            Alain                                                    7000 19-FEB-25           1
+          1006 Sarah                                              Johnson                                                  6200 25-FEB-25           2
+          1001 Ndizeye                                            Alain                                                    5000 24-FEB-25           3
+          1005 David                                              Williams                                                 4500 23-FEB-25           4
+          1003 Mucyo                                              Smith                                                    3000 21-FEB-25           5
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+EMPLOYEE_ID FIRST_NAME                                         LAST_NAME                                          TRANSACTION_COUNT
+----------- -------------------------------------------------- -------------------------------------------------- -----------------
+        101 Ndizeye                                            Alain                                                              5
+
+
+DEPARTMENT                                                                                           FIRST_NAME                                         LAST_NAME                                          SALARY_AMOUNT SALARY_RANK
+---------------------------------------------------------------------------------------------------- -------------------------------------------------- -------------------------------------------------- ------------- -----------
+IT                                                                                                   Ndizeye                                            Alain                                                      70000           1
+IT                                                                                                   Nganji                                             Brown                                                      67000           2
+HR                                                                                                   Mucyo                                              Smith                                                      60000           1
+Finance                                                                                              David                                              Williams                                                   72000           1
+Marketing                                                                                            Sarah                                              Johnson                                                    63500           1
+
+
+PROJECT_ID PROJECT_NAME                                                                                         DEPARTMENT                                                                                           START_DAT END_DATE  DURATION_DAYS DURATION_RANK
+---------- ---------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------- --------- --------- ------------- -------------
+         4 Data Security Upgrade                                                                                IT                                                                                                   01-AUG-23                     576             1
+         3 Financial Reporting Tool                                                                             Finance                                                                                              15-JAN-23 20-NOV-23           309             2
+         5 Marketing Campaign Manager                                                                           Marketing                                                                                            12-MAY-23 31-DEC-23           233             3
+         2 Employee Onboarding System                                                                           HR                                                                                                   10-MAR-23 30-SEP-23           204             4
+         1 Website Redesign                                                                                     IT                                                                                                   01-JUN-23 15-DEC-23           197             5
+
+
+EMPLOYEE_ID FIRST_NAME                                         LAST_NAME                                          DEPARTMENT                                                                                           SALARY_AMOUNT DEPT_AVG_SALARY
+----------- -------------------------------------------------- -------------------------------------------------- ---------------------------------------------------------------------------------------------------- ------------- ---------------
+        101 Ndizeye                                            Alain                                              IT                                                                                                           70000           68500
+
+
+DEPARTMENT_ID NAME                                                                                                 TRANSACTION_COUNT
+------------- ---------------------------------------------------------------------------------------------------- -----------------
+            1 IT                                                                                                                   5
+            3 Finance                                                                                                              1
+            4 Marketing                                                                                                            1
+            2 HR                                                                                                                   1
+
+
+Rollback complete.
+
+no rows selected
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+Commit complete.
+
+
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+USERNAME                                                                                                                        
+--------------------------------------------------------------------------------------------------------------------------------
+HR_USER
+
+
+TRANSACTION_ID EMPLOYEE_ID     AMOUNT TRANSACTI
+-------------- ----------- ---------- ---------
+          1001         101       5000 24-FEB-25
+          1002         101       7000 19-FEB-25
+          1003         102       3000 21-FEB-25
+          1005         104       4500 23-FEB-25
+          1006         105       6200 25-FEB-25
+          1007         101       5500 25-FEB-25
+          1008         101       7200 23-FEB-25
+          1009         101       8100 22-FEB-25
+
+8 rows selected. 
+
+
+DEPARTMENT                                                                                           AVG_TRANSACTION_AMOUNT
+---------------------------------------------------------------------------------------------------- ----------------------
+IT                                                                                                                     6560
+Marketing                                                                                                              6200
+Finance                                                                                                                4500
+HR                                                                                                                     3000
+
+
+EMPLOYEE_ID FIRST_NAME                                         LAST_NAME                                          TRANSACTION_COUNT TOTAL_AMOUNT
+----------- -------------------------------------------------- -------------------------------------------------- ----------------- ------------
+        101 Ndizeye                                            Alain                                                              5        32800
+        105 Sarah                                              Johnson                                                            1         6200
+        104 David                                              Williams                                                           1         4500
+        102 Mucyo                                              Smith                                                              1         3000
+
+
+EMPLOYEE_ID FIRST_NAME                                         LAST_NAME                                          DEPARTMENT                                                                                           LATEST_TR
+----------- -------------------------------------------------- -------------------------------------------------- ---------------------------------------------------------------------------------------------------- ---------
+        101 Ndizeye                                            Alain                                              IT                                                                                                   25-FEB-25
+        105 Sarah                                              Johnson                                            Marketing                                                                                            25-FEB-25
+        104 David                                              Williams                                           Finance                                                                                              23-FEB-25
+        102 Mucyo                                              Smith                                              HR                                                                                                   21-FEB-25
+        103 Nganji                                             Brown                                              IT                                                                                                            
+
+no rows selected
+
+DEPARTMENT                                                                                           FIRST_NAME                                         LAST_NAME                                          SALARY_AMOUNT
+---------------------------------------------------------------------------------------------------- -------------------------------------------------- -------------------------------------------------- -------------
+IT                                                                                                   Ndizeye                                            Alain                                                      70000
+HR                                                                                                   Mucyo                                              Smith                                                      60000
+Finance                                                                                              David                                              Williams                                                   72000
+Marketing                                                                                            Sarah                                              Johnson                                                    63500
+
